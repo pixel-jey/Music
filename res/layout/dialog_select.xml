@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2,3" >
+
+        <TableRow android:background="#000" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_wite"
+                android:gravity="center"
+                android:text="@string/selectAllButton"
+                android:textColor="#FFF" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_wite"
+                android:gravity="center"
+                android:text="@string/editButton"
+                android:textColor="#FFF" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_wite"
+                android:gravity="center"
+                android:text="@string/deleButton"
+                android:textColor="#FFF" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_wite"
+                android:gravity="center"
+                android:text="@string/exit"
+                android:textColor="#FFF" />
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/black"
+        android:choiceMode="multipleChoice"
+        android:scrollbarTrackVertical="@android:color/transparent"
+        android:scrollbarSize="1dp" >
+    </ListView>
+
+</LinearLayout>

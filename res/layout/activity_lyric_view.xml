@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/transparent" >
+
+    <com.life.music.widget.LyricView
+        android:id="@+id/mylrc"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="20dip" />
+
+    <SeekBar
+        android:id="@+id/seekbarmusic"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:progressDrawable="@drawable/progress_holo_light"
+        android:thumb="@drawable/detail_icon_schedule_ball" />
+    
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/button_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_wite"
+            android:gravity="center"
+            android:text="@string/previous"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_wite"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_wite"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+
+
+
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekbarAudio"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_wite"
+            android:gravity="center"
+            android:text="@string/previous"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button_dele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_wite"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button_lrc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_wite"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>    
+    
+    <SeekBar
+        android:id="@+id/seekbarAudio"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_down"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:progressDrawable="@drawable/progress_holo_light"
+        android:thumb="@drawable/detail_icon_schedule_ball" />
+    
+
+    <Button
+        android:id="@+id/button_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekbarmusic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_wite"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:visibility="visible" />
+
+</RelativeLayout>

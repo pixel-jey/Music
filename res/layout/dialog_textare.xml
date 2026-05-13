@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/black"
+    android:layout_marginBottom="1dp">
+
+    <EditText
+        android:id="@+id/editTextContent"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="28"
+        android:maxLines="28"
+        android:scrollbarSize="1dp" 
+        android:scrollbars="vertical"
+        android:selectAllOnFocus="false" />
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button3"
+        android:background="@drawable/btn_wite"
+        android:gravity="center"
+        android:text="@string/saveButton"
+        android:textColor="#FFF" />
+    
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"        
+        android:background="@drawable/btn_wite"
+        android:gravity="center"
+        android:text="@string/LineTopButton"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextContent"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/btn_wite"
+        android:gravity="center"
+        android:text="@string/backButton"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button2"
+        android:background="@drawable/btn_wite"
+        android:gravity="center"
+        android:text="@string/LrcButton"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextContent"
+        android:layout_toLeftOf="@+id/button1"
+        android:background="@drawable/btn_wite"
+        android:gravity="center"
+        android:text="@string/clsButton"
+        android:textColor="#FFF" />
+  
+</RelativeLayout>

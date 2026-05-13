@@ -1,0 +1,27 @@
+# view AndroidManifest.xml #generated:49
+-keep class com.life.music.MediaButtonIntentReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.life.music.PlayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:16
+-keep class com.life.music.SongsActivity { <init>(...); }
+
+# view res/layout/activity_lyric_view.xml #generated:7
+-keep class com.life.music.widget.LyricView { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.life.music.widget.MusicBroadcastReceiver { <init>(...); }
+
+# onClick res/layout/titlebar.xml #generated:51
+-keepclassmembers class * { *** onPlayClicked(...); }
+
+# onClick res/layout/titlebar.xml #generated:39
+-keepclassmembers class * { *** onSearchClicked(...); }
+
+# onClick res/layout/titlebar.xml #generated:16
+-keepclassmembers class * { *** onSelectAllClicked(...); }
+
+# onClick res/layout/titlebar.xml #generated:27
+-keepclassmembers class * { *** showSelectEvent(...); }
+
